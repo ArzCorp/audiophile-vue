@@ -7,7 +7,7 @@ import Container from '../Container.vue'
 	<div class="flex items-center justify-between bg-[#181818] text-white">
 		<Container>
 			<div class="flex items-center justify-between">
-				<div>
+				<div class="pb-[158px] pt-[128px]">
 					<p
 						class="text-sm leading-5 text-opacity-50 text-white mb-6 tracking-[10px]"
 					>
@@ -26,7 +26,7 @@ import Container from '../Container.vue'
 				</div>
 				<figure class="h-full w-full pb-10">
 					<img
-						class="mx-auto w-[60%]"
+						class="mx-auto h-full"
 						src="src/assets/img/home/desktop/image-hero.jpg"
 						alt="hero"
 					/>
