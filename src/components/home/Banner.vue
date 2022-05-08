@@ -22,7 +22,7 @@ import Container from '../Container.vue'
 						Experience natural, lifelike audio and exceptional build quality
 						made for the passionate music enthusiast.
 					</p>
-					<Button />
+					<Button>See Product </Button>
 				</div>
 				<figure class="h-full w-full pb-10">
 					<img
