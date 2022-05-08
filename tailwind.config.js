@@ -5,7 +5,11 @@ module.exports = {
 		'./App.vue',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				manrope: ['Manrope', 'sans-serif'],
+			},
+		},
 	},
 	plugins: [],
 }
