@@ -23,3 +23,7 @@ import Container from './Container.vue'
 		</Container>
 	</header>
 </template>
+
+<script>
+export default {}
+</script>
