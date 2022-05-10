@@ -7,11 +7,16 @@ import Container from './Container.vue'
 
 <template>
 	<header
-		class="bg-black text-white w-full mx-auto py-9 border-b border-[#979797]"
+		class="bg-black text-white w-full mx-auto py-5 lg:py-9 border-b border-[#979797]"
 	>
 		<Container>
 			<div class="flex items-center justify-between">
-				<Logo />
+				<div class="flex items-center">
+					<div class="lg:hidden">
+						<p class="fas fa-bars mr-10" />
+					</div>
+					<Logo />
+				</div>
 				<Navbar />
 				<Cart />
 			</div>

@@ -1,6 +1,6 @@
 <template>
 	<nav>
-		<ul class="flex items-center gap-8 text-sm">
+		<ul class="hidden lg:flex items-center gap-8 text-sm">
 			<li>HOME</li>
 			<li>HEADPHONES</li>
 			<li>SPEAKERS</li>
