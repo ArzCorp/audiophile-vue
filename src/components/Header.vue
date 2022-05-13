@@ -13,11 +13,13 @@ import Container from './Container.vue'
 			<div class="flex items-center justify-between">
 				<div class="flex items-center">
 					<div class="lg:hidden">
-						<p class="fas fa-bars mr-10" />
+						<p class="fas fa-bars mr-10" @click="toogleMenu" />
 					</div>
 					<Logo />
 				</div>
-				<Navbar />
+				<div :class="[styles]">
+					<Navbar :handleClose="toogleMenu" />
+				</div>
 				<Cart />
 			</div>
 		</Container>
@@ -25,5 +27,26 @@ import Container from './Container.vue'
 </template>
 
 <script>
-export default {}
+export default {
+	data() {
+		return {
+			isOpen: false,
+			styles: 'hidden',
+		}
+	},
+	methods: {
+		toogleMenu() {
+			this.isOpen = !this.isOpen
+		},
+	},
+	watch: {
+		isOpen(newVal) {
+			if (newVal) {
+				this.styles = 'block'
+			} else {
+				this.styles = 'hidden'
+			}
+		},
+	},
+}
 </script>
