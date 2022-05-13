@@ -17,9 +17,7 @@ import Container from './Container.vue'
 					</div>
 					<Logo />
 				</div>
-				<div v-if="isOpen">
-					<Navbar :handleClose="toogleMenu" />
-				</div>
+				<Navbar :handleClose="toogleMenu" :isOpen="isOpen" />
 				<Cart />
 			</div>
 		</Container>
@@ -31,7 +29,15 @@ export default {
 	data() {
 		return {
 			isOpen: false,
+			openStyles: 'transition-transform translate-x-[200px]',
 		}
+	},
+	watch: {
+		isOpen(newValue) {
+			if (newValue) {
+			} else {
+			}
+		},
 	},
 	methods: {
 		toogleMenu() {

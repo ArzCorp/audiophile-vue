@@ -1,7 +1,10 @@
 <template>
 	<nav>
 		<ul
-			class="fixed z-[80] lg:static top-0 left-0 bg-black min-w-[200px] min-h-screen lg:min-h-min px-3 lg:px-0 py-5 lg:py-0 flex-col lg:flex-row flex lg:items-center gap-8 text-sm"
+			:class="[
+				openStyles,
+				'fixed z-[80] lg:static transition-transform duration-[700ms] top-0 left-0 bg-black min-w-[200px] min-h-screen lg:min-h-min px-3 lg:px-0 py-5 lg:py-0 flex-col lg:flex-row flex lg:items-center gap-8 text-sm',
+			]"
 		>
 			<div class="lg:hidden">
 				<i
@@ -21,6 +24,13 @@
 export default {
 	props: {
 		handleClose: Function,
+		isOpen: Boolean,
+	},
+	computed: {
+		openStyles() {
+			if (this.isOpen) return 'transform-x-[200]'
+			return '-translate-x-[200px]'
+		},
 	},
 }
 </script>
