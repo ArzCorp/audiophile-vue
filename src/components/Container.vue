@@ -1,7 +1,7 @@
 <template>
 	<main
 		style="display: inherit"
-		class="w-full max-w-[90%] lg:max-w-[80%] font-manrope mx-auto xl:max-w-screen-xl"
+		class="w-[90%] max-w-[1100px] font-manrope mx-auto xl:max-w-screen-xl"
 	>
 		<slot></slot>
 	</main>
